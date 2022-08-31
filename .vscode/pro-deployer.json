@@ -1,0 +1,36 @@
+{
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"targets": [
+		{
+			"name": "My FTP",
+			"type": "ftp",
+			"host": "cswanson472.mccdgm.net",
+			"port": 21,
+			"user": "cswanson472",
+			"password": "Javascript22",
+			"dir": "/public_html/web105",
+			"transferDataType": "binary"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "cswanson472.mccdgm.net",
+			"port": 22,
+			"user": "cswanson472",
+			"password": "Javascript22",
+			"dir": "/public_html/web105",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
